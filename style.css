@@ -2,10 +2,23 @@
 
 .card-front strong,
 .card-front small {
+  width: 100%;
+  text-align: center;
   white-space: nowrap;
   line-height: 1.2;
 }
 
 .card-front small {
   letter-spacing: 1px;
+}
+
+@media (max-width: 1024px), (hover: none) and (pointer: coarse) {
+  .card-front {
+    transform: translateX(-6px);
+  }
+
+  .card-front strong,
+  .card-front small {
+    letter-spacing: normal;
+  }
 }
